@@ -4,15 +4,98 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import Google font for Lato -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <title>Kr8s</title>
 </head>
 <body>
-  <img src="kr8s-Logo-Transparent.svg" height="300px" width="300px">
-  <h1>Hello World!</h1>
+  <!-- NavBar will include logo, link to sections below -->
+  <div class="nav">
+    <a id="nav-logo" href=""><img src="./images/kr8s-Logo-Transparent.svg" height="50px" width="50px"></a>
 
-  <p>Netlify Hosted Page for the Kr8s Developer Tool</p>
+    <div id="nav-links">
+      <a href="#introduction">Introduction</a>
+      <a href="#walkthrough">Walthrough</a>
+      <a href="#getting-started">Getting Started</a>
+      <a href="#download">Download</a>
+      <a href="#about-us">About Us</a>
+    </div> 
+  </div>
+  
+  
+  <div id="main">
+    <img id="main-logo" src="./images/kr8s-Logo-Transparent.svg" height="300px" width="300px">
+    
+    <!-- Introduction/what is Kr8s/overview -->
+    <section class="topic">
+      <a class="title" id="introduction"><h2>Introduction</h2></a>
+
+      <h3 class="topic-text"> Kr8s (pronounced “crates”), a new open-source developer tool that quickly integrates and simplifies Kubernetes cluster monitoring, helping you keep an eye on the health of your microservice application.</h3>
+    </section>
+
+    <!-- K8s problem/solution -->
+    <section class="topic">
+      <a class="title" id="walkthrough"><h2>Walkthrough</h2></a>
+
+      <h3 class="topic-text">
+        Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.
+        <br>
+        <br>
+
+        <img class="demo-img" src="/images/cluster-connect.gif">
+
+        <br>
+        <br>
+
+        The Nodes Menu displays node-level metrics, as well as a list of deployed nodes and their relevant status conditions.
+        <br>
+        <br>
+
+        <img class="demo-img" src="/images/nodes-screenshot.png">
+
+        <br>
+        <br>
+        
+        The Pods Menu assembles an array of relevant metrics and container information, as well as a list of all deployed pods and their current statuses. You are able to click on a pod in the list to open a Pod View page, displaying the selected pod and child container information.
+        <br>
+        <br>
+
+        <img class="demo-img" src="/images/pods-to-podview.gif">
+      </h3>
+    </section>
+    
+    <!-- Product 'demo' gifs and explanation -->
+    <section class="topic">
+      <a class="title" id="getting-started"><h2>Getting Started</h2></a>
+
+      <h3 class="topic-text">Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.</h3>
+    </section>
+    
+    <!-- Demo Link/Getting Started -->
+    <section class="topic">
+      <a class="title" id="download"><h2>Download</h2></a>
+
+      <h3 class="topic-text">Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.</h3>
+    </section>
+    
+    <!-- Development Team -->
+    <section class="topic">
+      <a class="title" id="about-us"><h2>About Us</h2></a>
+
+      <h3 class="topic-text">Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.</h3>
+    </section>
+
+
+    <!-- How to contribute/bug reporting/feature request -->
+    <section class="topic">
+
+      <h3 class="topic-text">Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.</h3>
+      
+    </section>
+
+  </div>
 </body>
 </html>
