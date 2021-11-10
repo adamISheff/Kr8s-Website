@@ -1,12 +1,85 @@
 body {
-  color: #F1F0EF;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to bottom, rgb(28, 28, 33), rgb(33, 48, 70));
   margin: 0;
+
   font-family: 'Lato', sans-serif;
+  color: #F1F0EF;
+  font-size: larger;
+}
+
+.demo-img {
+  width: 100%;
+  border: .25em solid grey;
+  border-radius: .5em;
+}
+
+#main {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+#main-logo {
+  padding-top: 3%;
+  padding: 5%;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  border-bottom: 2px solid #686664;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-links {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+#nav-links > * {
+  width: 100%;
+  border-right: 1px solid #504a45;
+  border-left: 1px solid #504a45;
+  padding: 3%;
+
+  text-align: center;
+  text-decoration: none;
+  color: #F1F0EF;
+  font-size: large;
+}
+
+#nav-links > *:hover {
+  background: linear-gradient(to bottom, #aca6a0 , #535250);
+}
+
+#nav-logo {
+  height: 80%;
+  margin-left: 3%;
+}
+
+.title {
+  font-style: italic;
+}
+
+.topic {
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-links > * {
+    width: 100px;
+    font-size: medium;
+  }
+}
