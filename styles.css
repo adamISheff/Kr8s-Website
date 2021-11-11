@@ -5,7 +5,7 @@ body {
 
   font-family: 'Lato', sans-serif;
   color: #F1F0EF;
-  font-size: larger;
+  font-size: medium;
 }
 
 .demo-img {
@@ -31,6 +31,7 @@ body {
 
 .nav {
   position: fixed;
+  height: 5%;
   width: 100%;
   background-color: black;
   border-bottom: 2px solid #686664;
@@ -42,7 +43,6 @@ body {
 }
 
 #nav-links {
-  height: 100%;
   width: 80%;
   display: flex;
   justify-content: end;
@@ -52,12 +52,12 @@ body {
   width: 100%;
   border-right: 1px solid #504a45;
   border-left: 1px solid #504a45;
-  padding: 3%;
+  padding: 1%;
 
   text-align: center;
   text-decoration: none;
   color: #F1F0EF;
-  font-size: large;
+  font-size: medium;
 }
 
 #nav-links > *:hover {
@@ -65,7 +65,7 @@ body {
 }
 
 #nav-logo {
-  height: 80%;
+  padding: 1%;
   margin-left: 3%;
 }
 
@@ -80,11 +80,23 @@ body {
 .topic-text {
   width: 100%;
   line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
   #nav-links > * {
     width: 100px;
     font-size: medium;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .demo-img {
+    width: 50%;
+    border: .25rem solid grey;
+    border-radius: .5em;
+    align-self: center;
   }
 }
