@@ -14,7 +14,7 @@
 <body>
   <!-- NavBar will include logo, link to sections below -->
   <div class="nav">
-    <a id="nav-logo" href=""><img src="./images/kr8s-Logo-Transparent.svg" height="50px" width="50px"></a>
+    <a id="nav-logo" href=""><img src="./images/kr8s-Logo-Transparent.svg" height="40px" width="40px"></a>
 
     <div id="nav-links">
       <a href="#introduction">Introduction</a>
@@ -33,11 +33,11 @@
     <section class="topic">
       <br id="introduction">
       <br><br><br>
-      <a class="title"><h2>Introduction</h2></a>
+      <h2 class="title">Introduction</h2>
 
       <h3 class="topic-text"> 
         Kr8s (pronounced “crates”) is an open-source developer tool that quickly integrates and simplifies Kubernetes cluster monitoring, helping you keep an eye on the health of your microservice application.
-        <br><br>
+        <br>
         Through seamless integration of its core technologies, Kr8s offers a sophisticated solution for developers looking for out of the box functionality and reliability. Distributed via Electron, Kr8s installs as a standalone desktop application for MacOS, Windows, and Linux platforms.
       </h3>
     </section>
@@ -46,29 +46,25 @@
     <section class="topic">
       <br id="walkthrough">
       <br><br><br>
-      <a class="title"><h2>Walkthrough</h2></a>
+      <h2 class="title">Walkthrough</h2>
 
+      <div>
       <h3 class="topic-text">
         Upon opening the application, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.
-        <br>
         <br>
 
         <img class="demo-img" src="/images/cluster-connect.gif">
 
         <br>
-        <br>
 
         The Nodes Menu displays node-level metrics, as well as a list of deployed nodes and their relevant status conditions.
-        <br>
         <br>
 
         <img class="demo-img" src="/images/nodes-screenshot.png">
 
         <br>
-        <br>
         
         The Pods Menu assembles an array of relevant metrics and container information, as well as a list of all deployed pods and their current statuses. You are able to click on a pod in the list to open a Pod View page, displaying the selected pod and child container information.
-        <br>
         <br>
 
         <img class="demo-img" src="/images/pods-to-podview.gif">
@@ -79,15 +75,25 @@
     <section class="topic">
       <br id="getting-started">
       <br><br><br>
-      <a class="title"><h2>Getting Started</h2></a>
+      <h2 class="title">Getting Started</h2>
 
       <h3 class="topic-text">
-        <i class="started-heading">Prerequisites</i><br>
-        Kr8s functionality assumes that you have Docker and Kubernetes already installed and running on your machine. <br>
-        If your machine does not have these setup, the simplest way to install both is to follow the instructions for <a href="https://www.docker.com/get-started">Docker Desktop</a> installation, then enable Kubernetes from the Settings menu based on your operating system.
-        <br><br>
-        <i class="started-heading">If you don't have your own locally running cluster:</i><br>
-        If you are interested in trying out Kr8s, but do not yet have a running Kubernetes cluster, we created a rudimentary microservices application you can use to test features. Simply clone the <a href="https://github.com/oslabs-beta/kr8sdemo">kr8sdemo</a> repository and follow the instruction in the README.
+        <p>
+          <i class="started-heading">Prerequisites</i><br>
+          Kr8s functionality assumes that you have Docker and Kubernetes already installed and running on your machine.
+          If your machine does not have these setup, the simplest way to install both is to follow the instructions for <a class="topicLink" href="https://www.docker.com/get-started">Docker Desktop</a> installation, then enable Kubernetes from the Settings menu based on your operating system.
+        </p>
+        
+        <p>
+          <i class="started-heading">If you don't have your own locally running cluster:</i><br>
+          If you are interested in trying out Kr8s, but do not yet have a running Kubernetes cluster, we created a rudimentary microservices application you can use to test features. Simply clone the <a href="https://github.com/oslabs-beta/kr8sdemo">kr8sdemo</a> repository and follow the instruction in the README.
+        </p>
+        
+        <p>
+          <i class="started-heading">Once there is a running cluster on your machine:</i><br>
+          Download and install the Kr8s application from the <a href="#download">download section</a>. Open the application and select "Local Cluster" to connect to the running cluster on your machine. Kr8s will take care of everything from there to make the connections behind the scenes and get Prometheus and Grafana up and running with your cluster!
+        </p>
+        <img class="demo-img" src="/images/cluster-connect.gif">
       </h3>
     </section>
     
@@ -95,10 +101,15 @@
     <section class="topic">
       <br id="download">
       <br><br><br>
-      <a class="title"><h2>Download</h2></a>
+      <h2>Download</h2>
 
       <h3 class="topic-text">
-        Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.
+        Kr8s is available for download based on your OS:
+        <div id="download-links">
+          <a href="path_to_file" download="proposed_file_name"><img src="/images/linux.png" height="75px" width="150px"></a>
+          <a href="path_to_file" download="proposed_file_name"><img src="/images/mac.png" height="75px" width="150px"></a>
+          <a href="path_to_file" download="proposed_file_name"><img src="/images/windows.png" height="75px" width="150px"></a>
+        </div>
       </h3>
     </section>
     
@@ -106,18 +117,51 @@
     <section class="topic">
       <br id="about-us">
       <br><br><br>
-      <a class="title"><h2>About Us</h2></a>
+      <h2 class="title">About Us</h2>
 
       <h3 class="topic-text">
-        Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.
+        <p>
+          We are all very excited to share Kr8s with everyone and invite you all to connect with us on LinkedIn.
+        </p>
+
+        <div id="team">
+          <wrap class="member">
+            <a href="https://www.linkedin.com/in/adam-sheff/">
+            <p class="name">Adam Sheff</p>
+            <img class="profile-pic" src="/images/Adam.png">
+            </a>
+          </wrap>
+          
+          <wrap class="member">
+            <p class="name">Justin Stoddard</p>
+            <img class="profile-pic" src="/images/Justin.png">
+          </wrap>
+
+          <wrap class="member">
+            <p class="name">Duke Lee</p>
+            <img class="profile-pic" src="/images/Duke.png">
+          </wrap>
+
+          <wrap class="member">
+            <p class="name">Reland Boyle</p>
+            <img class="profile-pic" src="/images/Reland.png">
+          </wrap>
+        </div>
       </h3>
     </section>
 
 
-    <!-- How to contribute/bug reporting/feature request -->
+    <!-- How to contribute -->
     <section class="topic">
+      <br id="contributing">
+      <br><br><br>
 
-      <h3 class="topic-text">Upon opening the app, the landing page prompts you to connect to your local running Kubernetes cluster. Once connected, you are redirected to the Dashboard page where data immediately populates into a selection of visualizers refreshing on a 15 second interval. This view offers an at-a-glance, high-level overview of the overall health and function of your cluster.</h3>
+      <h2 class="title">Contributing</h2>
+      <h3 class="topic-text">
+        <p>
+          The Kr8s team is always excited to collaborate with other engineers! Please reference our <a href="https://github.com/oslabs-beta/kr8s/blob/dev/CONTRIBUTING.md">Contributing Guide</a> in our <a href="https://github.com/oslabs-beta/kr8s">Github Repo</a> for how you can add to the ongoing development of Kra8s.
+        </p>
+      </h3>
       
     </section>
 
