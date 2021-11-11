@@ -28,6 +28,13 @@ a:visited {
   justify-content: space-around;
 }
 
+#github {
+  background-color: #686664;
+  border: 2px solid whitesmoke;
+  border-radius: .5em;
+  padding: 15px;
+}
+
 #main {
   width: 80%;
   margin: auto;
