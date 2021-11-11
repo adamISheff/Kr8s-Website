@@ -39,9 +39,26 @@ a:visited {
 }
 
 #kr8s-links-list{
-  list-style-image: url('./images/kr8s-Logo-Transparent.svg');
+  list-style-type: none;
+  margin: auto;
+  margin-bottom: 100px;
   display: flex;
-  justify-content: space-evenly;
+  background: black;
+  border: 2px solid grey;
+  border-radius: .5em;
+  width: 100%;
+}
+
+#kr8s-links-list > * {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: larger;
+  border-right: 1px solid grey;
+}
+
+#kr8s-links-list > *:hover {
+  background: linear-gradient(to bottom, #aca6a0 , #535250);
 }
 
 #main {
