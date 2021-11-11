@@ -12,12 +12,8 @@ a:active {
   color: yellow;
 }
 
-a:hover {
-  color: red;
-}
-
 a:visited {
-  color:rgb(27, 107, 172);
+  color:yellow;
 }
 
 .demo-img {
@@ -55,6 +51,11 @@ a:visited {
 }
 
 .member > * {
+  color: black;
+  text-decoration: none;
+}
+
+.member > *:visited {
   color: black;
   text-decoration: none;
 }
@@ -120,6 +121,7 @@ a:visited {
   justify-content: space-around;
 
   background: #686664;
+  border: 2px solid black;
   border-radius: .5em;
 }
 
