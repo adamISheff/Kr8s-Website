@@ -142,6 +142,9 @@ a:visited {
   padding: 1%;
   margin: 3%;
 }
+#nav-logo > * {
+  height: 30px;
+}
 
 .profile-pic {
   height: 100px;
