@@ -78,8 +78,8 @@ a:visited {
 }
 
 #main-logo {
-  width: 80%;
-  height: 20%;
+  margin-top: 3%;
+  width: 30%;
 }
 
 .member {
@@ -118,6 +118,7 @@ a:visited {
 
 #nav-links {
   width: 80%;
+  height: 100%;
   display: flex;
   justify-content: end;
 }
@@ -195,6 +196,15 @@ a:visited {
   #nav-links > * {
     width: 100px;
     font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  .nav {
+    height: 7%;
+  }
+  #main-logo {
+    margin-top: 10%;
   }
 }
 
