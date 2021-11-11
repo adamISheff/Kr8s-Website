@@ -8,6 +8,18 @@ body {
   font-size: medium;
 }
 
+a:active {
+  color: yellow;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color:rgb(27, 107, 172);
+}
+
 .demo-img {
   width: 100%;
   border: .25rem solid grey;
@@ -69,15 +81,26 @@ body {
   margin-left: 3%;
 }
 
+.started-heading {
+  color: rgb(102, 97, 97);
+}
+
 .title {
   font-style: italic;
 }
 
 .topic {
-  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topic-link {
+  display: inline;
 }
 
 .topic-text {
+  margin: auto;
   width: 100%;
   line-height: 2.5rem;
   display: flex;
@@ -92,9 +115,13 @@ body {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
+  .topic {
+    width: 80%;
+  }
+
   .demo-img {
-    width: 50%;
+    width: 75%;
     border: .25rem solid grey;
     border-radius: .5em;
     align-self: center;
